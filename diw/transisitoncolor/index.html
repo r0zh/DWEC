@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .header {
+        text-align: center;
+        font-family: monospace;
+        font-size: x-large;
+    }
+
+    .botones {
+        background-color: rgb(255, 210, 165);
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .botones__boton {
+        padding: 1em;
+        margin: 1em;
+        text-align: center;
+        font-family: monospace;
+        font-size: x-large;
+        border: 1px solid black;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <h1>Metodología BEM</h1>
+    </header>
+
+    <div class="botones">
+        <div class="botones__boton botones__boton--success">Success</div>
+        <div class="botones__boton botones__boton--primary">Primary</div>
+        <div class="botones__boton botones__boton--danger">DANGER</div>
+        <div class="botones__boton botones__boton--default">Default</div>
+        <div class="botones__boton botones__boton--warning">WARNING</div>
+    </div>
+</body>
+
+</html>

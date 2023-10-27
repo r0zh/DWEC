@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="exercises.js" type="text/javascript"></script>
+  <script defer src="script.js" type="text/javascript"></script>
+  <title>Prueba</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @layer components {
+      .groups {
+        @apply flex flex-row flex-wrap my-5 mx-3 justify-center;
+      }
+      .group{
+        @apply flex flex-col p-5 bg-gray-900 rounded-2xl my-4 mx-2 md:mx-10 max-w-5xl;
+      }
+      .group-title{
+        @apply text-white font-bold text-2xl;
+      }
+      .cards{
+        @apply mt-3 flex flex-row flex-wrap items-center justify-center;
+      }
+      .card{
+        @apply bg-white px-5 py-4 my-4 mx-2 md:mx-5 rounded-xl
+      }
+      .card-btn{
+        @apply my-3 bg-gray-600 rounded-lg py-2 px-4 text-white font-semibold;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <span id="salida"></span>
+  </main>
+</body>
+
+</html>

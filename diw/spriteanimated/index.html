@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Animated Zombie Sprite</title>
+        <style>
+            .zombie-sprite {
+                display: inline-block;
+                width: 128px;
+                height: 128px;
+                background-image: url('zombi-sprite2.png');
+                animation: animate-zombie 0.7s steps(4) infinite;
+            }
+
+            @keyframes animate-zombie {
+                from {
+                    background-position-x: 0px;
+                }
+
+                to {
+                    background-position-x: -512px;
+                }
+            }
+
+            #uno {
+                background-position-y: 128px;
+            }
+
+            #dos {
+                background-position-y: 256px;
+            }
+
+            #tres {
+                background-position-y: 384px;
+            }
+
+            #cuatro {
+                background-position-y: 512px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="zombie-sprite" id="uno"></div>
+        <div class="zombie-sprite" id="dos"></div>
+        <div class="zombie-sprite" id="tres"></div>
+        <div class="zombie-sprite" id="cuatro"></div>
+    </body>
+
+    </html>
+</body>
+
+</html>

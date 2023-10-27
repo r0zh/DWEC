@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript</title>
+  <link href="./img/favicon.ico" rel="icon" type="image/x-icon">
+  <!-- <link rel="stylesheet" href="./css/styles.css">  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @layer components {
+      .button{
+        @apply py-5 bg-gray-600;
+      }
+
+      .mode_btn{
+        @apply bg-slate-800 w-24 text-center p-2.5 my-2 rounded-xl text-white font-semibold;
+      }
+    }
+  </style>
+  <!-- Evaluate the final expresion -->
+  <script defer type="text/javascript" src="./js/evaluate.js"></script>
+
+  <!-- Animate the display -->
+  <script defer type="text/javascript" src="./js/display.js"></script>
+
+  <!-- Input handlers -->
+  <script defer type="text/javascript" src="./js/handleMathFunctionInput.js"></script>
+  <script defer type="text/javascript" src="./js/handleFunctionInput.js"></script>
+  <script defer type="text/javascript" src="./js/handleInput.js"></script>
+
+  <script defer type="text/javascript" src="./js/script.js"></script>
+  <script defer type="text/javascript" src="./js/changemode.js"></script>
+
+  </script>
+</head>
+
+<body>
+  <!-- --------HEADER---------- -->
+  <div class="bg-black py-6">
+    <h1 class="text-white text-center font-mono font-semibold text-2xl">FUNDAMENTOS DE JS (ES6) - Exercises</h1>
+  </div>
+  <!-- ---------MENU----------- -->
+  <div class="bg-gray-600 grid grid-cols-3 gap-1 text-center font-medium py-1 rounded-bl-lg rounded-br-lg">
+    <a class="text-white w-full" href="https://www.w3schools.com/js/default.asp">w3schools</a>
+    <a class="text-white w-full" href="https://es.javascript.info/js">javascript.info</a>
+    <a class="text-white w-full" href="https://developer.mozilla.org/es/docs/Web/JavaScript">MDN</a>
+  </div>
+  <br />
+  <!-- ------MAIN-CONTENT------ -->
+  <div class="flex justify-center bg-gray-300">
+
+    <div class="card w-96">
+      <div class="grid grid-cols-2 justify-items-center">
+        <div class="mode_btn"><button id="normal_btn">Normal</button></div>
+        <div class="mode_btn"><button id="scientific_btn">Cientifica</button></div>
+      </div>
+      <div class="bg-slate-500 grid grid-cols-6 gap-1 p-3 font-mono w-full font-mono">
+
+        <div class="transition-[height] ease-in-out col-span-6 h-0 bg-slate-900 text-white py-2 px-1 mb-2 text-right"
+          id="display-container">
+          <p id="display" class="transition-[opacity] opacity-0"></p>
+          <p id="result" class="hidden">g</p>
+        </div>
+        <button class="button math_function scientific_btn">log</button>
+        <button class="button function">M</button>
+        <button class="button function">&lt=</button>
+        <button class="button function">C</button>
+        <button class="button function">CE</button>
+        <button class="button function scientific_btn">Rnd</button>
+        <button class="button math_function scientific_btn">ln</button>
+        <button class="button number">7</button>
+        <button class="button number">8</button>
+        <button class="button number">9</button>
+        <button class="button operator">/</button>
+        <button class="button math_function scientific_btn">2^a</button>
+        <button class="button function scientific_btn">e</button>
+        <button class="button number">4</button>
+        <button class="button number">5</button>
+        <button class="button number">6</button>
+        <button class="button operator">*</button>
+        <button class="button math_operator scientific_btn">a^b</button>
+        <button class="button operator scientific_btn">π</button>
+        <button class="button number">1</button>
+        <button class="button number">2</button>
+        <button class="button number">3</button>
+        <button class="button operator">–</button>
+        <button class="button math_function scientific_btn">cos</button>
+        <button class="button operator scientific_btn">!</button>
+        <button class="button function">+/-</button>
+        <button class="button number">0</button>
+        <button class="button operator">.</button>
+        <button class="button operator">+</button>
+        <button class="button math_function scientific_btn">sen</button>
+        <button class="button math_function scientific_btn">mod</button>
+        <button class="button function">1/x</button>
+        <button class="button operator">√</button>
+        <button class="button function">%</button>
+        <button class="button function">=</button>
+        <button class="button math_function scientific_btn">tan</button>
+      </div>
+      <div class="bg-slate-800 w-fit p-2.5 my-2 rounded-xl text-white font-semibold"><a href="../../index.html">&gt;&gt;
+          Página
+          principal</a></div>
+    </div>
+  </div>
+  <br />
+</body>
+
+</html>

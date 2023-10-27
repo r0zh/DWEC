@@ -1,0 +1,36 @@
+<!-- FILEPATH: /workspaces/Files/diw/texto con imagen como color/index.html -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Text with Image Color</title>
+    <style>
+        /* Set the background of the text to the image */
+        h1 {
+            background-image: url('../imagenes/Agua.png');
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-size: 100px;
+            animation: movebackground 4s infinite linear;
+        }
+
+        @keyframes movebackground {
+            from {
+                background-position-x: 0px;
+            }
+
+            to {
+                background-position-x: -500px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello World!</h1>
+</body>
+
+</html>

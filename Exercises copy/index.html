@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Exercises</title>
+  <script defer src="./js/script.js" type="text/JavaScript"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @layer components {
+      .groups {
+        @apply flex flex-row flex-wrap my-5 mx-3 justify-center;
+      }
+      .group{
+        @apply flex flex-col p-5 bg-[#f3f4f6] rounded-2xl my-4 mx-2 md:mx-10 max-w-5xl shadow-md;
+      }
+      .group-title{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        @apply text-black font-semibold text-2xl;
+      }
+      .cards{
+        @apply mt-3 flex flex-row flex-wrap items-center justify-center w-fit;
+      }
+      .card{
+        @apply w-full sm:w-[26rem] whitespace-normal break-words rounded-lg bg-white p-4 m-4 font-sans text-sm font-normal text-slate-500 shadow-lg shadow-slate-500/10  hover:shadow-2xl hover:outline-0 outline outline-2 transition-all;
+      }
+      .card-btn{
+        @apply my-3 bg-gray-600 rounded-lg py-2 px-4 text-white font-semibold;
+      }
+      .status{
+        @apply relative inline-block select-none whitespace-nowrap rounded-full py-1 px-2 align-baseline font-sans text-xs font-medium capitalize leading-none tracking-wide text-white
+      }
+      .done{
+        @apply bg-green-400;
+      }
+      .in-progress{
+        @apply bg-yellow-400;
+      }
+      .to-do{
+        @apply bg-red-400;
+      }
+    }
+  </style>
+</head>
+
+<body class="font-mono">
+  <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800 sticky top-0 z-50">
+    <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+      <a class="flex items-center hover:cursor-pointer" id="scrollButton">
+        <img src="./img/up-arrow-symbol-in-a-circle.png" class="mr-3 h-6 sm:h-9 rotate-180 transition-all"
+          alt="Go up/down button" id="scrollImage" />
+      </a>
+      <div class="flex items-center lg:order-2">
+        <img class="h-12 self-center" src="./img/JavaScript-logo.png"></img>
+      </div>
+      <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1 text-3xl" id="mobile-menu-2">
+        FUNDAMENTOS DE <img class="h-12 self-center mx-2" src="./img/JavaScript-logo.png"></img> (ES6)
+        -Exercises
+      </div>
+    </div>
+  </nav>
+
+
+  <main>
+    <!-- 01 -->
+    <div name="Grupos" class="groups">
+      <div name="Grupo" class="group">
+        <h1 class="group-title">Alert()</h1>
+        <div name="Cards" class="cards">
+          <!-- Card -->
+          <div class="card">
+            <div class="mb-2 flex items-center gap-3">
+              <a href="./ejercicios/Ejercicio01-01/index.html"
+                class="block font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500">
+                Exercise 1
+              </a>
+              <div class="status done">
+                <div class="mt-px">Finished</div>
+              </div>
+            </div>
+            <p class="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased">
+              Display an alert box (js inside html)
+            </p>
+            <div class="mt-4 flex items-center gap-5">
+              <div class="flex items-center gap-1">
+                <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+                <p class="block font-sans text-xs font-normal text-gray-700 antialiased">
+                  JavaScript
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="card">
+            <div class="mb-2 flex items-center gap-3">
+              <a href="./ejercicios/Ejercicio01-02/index.html"
+                class="block font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500">
+                Exercise 02
+              </a>
+              <div class="status done">
+                <div class="mt-px">Finished</div>
+              </div>
+            </div>
+            <p class="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased">
+              Display an alert box (js in file appart)
+            </p>
+            <div class="mt-4 flex items-center gap-5">
+              <div class="flex items-center gap-1">
+                <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+                <p class="block font-sans text-xs font-normal text-gray-700 antialiased">
+                  JavaScript
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="card">
+            <div class="mb-2 flex items-center gap-3">
+              <a href="./ejercicios/Ejercicio01-03/index.html"
+                class="block font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500">
+                Exercise 03
+              </a>
+              <div class="status done">
+                <div class="mt-px">Finished</div>
+              </div>
+            </div>
+            <p class="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased">
+              Display an alert box when paragraph is pressed
+            </p>
+            <div class="mt-4 flex items-center gap-5">
+              <div class="flex items-center gap-1">
+                <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+                <p class="block font-sans text-xs font-normal text-gray-700 antialiased">
+                  JavaScript
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="card">
+            <div class="mb-2 flex items-center gap-3">
+              <a href="./ejercicios/Ejercicio01-04/index.html"
+                class="block font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500">
+                Exercise 04
+              </a>
+              <div class="status done">
+                <div class="mt-px">Finished</div>
+              </div>
+            </div>
+            <p class="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased">
+              Example of script with call from HTML element
+            </p>
+            <div class="mt-4 flex items-center gap-5">
+              <div class="flex items-center gap-1">
+                <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+                <p class="block font-sans text-xs font-normal text-gray-700 antialiased">
+                  JavaScript
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="card">
+            <div class="mb-2 flex items-center gap-3">
+              <a href="./ejercicios/Ejercicio01-05/index.html"
+                class="block font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500">
+                Exercise 05
+              </a>
+              <div class="status done">
+                <div class="mt-px">Finished</div>
+              </div>
+            </div>
+            <p class="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased">
+              Asks the user for his name and greet him using the alert function.
+            </p>
+            <div class="mt-4 flex items-center gap-5">
+              <div class="flex items-center gap-1">
+                <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+                <p class="block font-sans text-xs font-normal text-gray-700 antialiased">
+                  JavaScript
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="card">
+            <div class="mb-2 flex items-center gap-3">
+              <a href="./ejercicios/Ejercicio01-06/index.html"
+                class="block font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500">
+                Exercise 06
+              </a>
+              <div class="status done">
+                <div class="mt-px">Finished</div>
+              </div>
+            </div>
+            <p class="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased">
+              Asks the user for their name and give the option to greet and say goodbye using the alert function.
+            </p>
+            <div class="mt-4 flex items-center gap-5">
+              <div class="flex items-center gap-1">
+                <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+                <p class="block font-sans text-xs font-normal text-gray-700 antialiased">
+                  JavaScript
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="card">
+            <div class="mb-2 flex items-center gap-3">
+              <a href="./ejercicios/Ejercicio01-07/index.html"
+                class="block font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500">
+                Exercise 07
+              </a>
+              <div class="status done">
+                <div class="mt-px">Finished</div>
+              </div>
+            </div>
+            <p class="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased">
+              Asks the user for his/her name and say hello and say goodbye when he/she is positioned on or off a
+            </p>
+            <div class="mt-4 flex items-center gap-5">
+              <div class="flex items-center gap-1">
+                <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+                <p class="block font-sans text-xs font-normal text-gray-700 antialiased">
+                  JavaScript
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02-1 -->
+      <div name="Grupo" class="group">
+        <h1 class="group-title">DOM_prompt</h1>
+        <div name="Cards" class="cards">
+          <!-- Card -->
+          <div class="card">
+            <div class="mb-2 flex items-center gap-3">
+              <a href="./ejercicios/Ejercicio02-05/index.html"
+                class="block font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500">
+                Exercise 05
+              </a>
+              <div class="status done">
+                <div class="mt-px">Finished</div>
+              </div>
+            </div>
+            <p class="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased">
+              Asks the user for his name using the prompt function and greet him using the DOM. </p>
+            <div class="mt-4 flex items-center gap-5">
+              <div class="flex items-center gap-1">
+                <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+                <p class="block font-sans text-xs font-normal text-gray-700 antialiased">
+                  JavaScript
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="card">
+            <div class="mb-2 flex items-center gap-3">
+              <a href="./ejercicios/Ejercicio02-06/index.html"
+                class="block font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500">
+                Exercise 06
+              </a>
+              <div class="status done">
+                <div class="mt-px">Finished</div>
+              </div>
+            </div>
+            <p class="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased">
+              Asks the user for his name using the prompt function and give the option to greet him or say goodbye
+              using the DOM. </p>
+            <div class="mt-4 flex items-center gap-5">
+              <div class="flex items-center gap-1">
+                <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+                <p class="block font-sans text-xs font-normal text-gray-700 antialiased">
+                  JavaScript
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="card">
+            <div class="mb-2 flex items-center gap-3">
+              <a href="./ejercicios/Ejercicio02-07/index.html"
+                class="block font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500">
+                Exercise 07
+              </a>
+              <div class="status done">
+                <div class="mt-px">Finished</div>
+              </div>
+            </div>
+            <p class="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased">
+              Asks the user for his/her name, greet the user or say goodbye when he/she stands on a square or leaves it.
+            </p>
+            <div class="mt-4 flex items-center gap-5">
+              <div class="flex items-center gap-1">
+                <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+                <p class="block font-sans text-xs font-normal text-gray-700 antialiased">
+                  JavaScript
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02-2 -->
+      <div name="Grupo" class="group">
+        <h1 class="group-title">DOM_input</h1>
+        <div name="Cards" class="cards">
+          <!-- Card -->
+          <div class="card">
+            <div class="mb-2 flex items-center gap-3">
+              <a href="./ejercicios/Ejercicio02-08/index.html"
+                class="block font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500">
+                Exercise 08
+              </a>
+              <div class="status done">
+                <div class="mt-px">Finished</div>
+              </div>
+            </div>
+            <p class="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased">
+              Asks the user for his name and greet him using the DOM.</p>
+            <div class="mt-4 flex items-center gap-5">
+              <div class="flex items-center gap-1">
+                <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+                <p class="block font-sans text-xs font-normal text-gray-700 antialiased">
+                  JavaScript
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="card">
+            <div class="mb-2 flex items-center gap-3">
+              <a href="./ejercicios/Ejercicio02-09/index.html"
+                class="block font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500">
+                Exercise 09
+              </a>
+              <div class="status done">
+                <div class="mt-px">Finished</div>
+              </div>
+            </div>
+            <p class="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased">
+              Asks the user for his name and give the option to greet him or say goodbye
+              using the DOM. </p>
+            <div class="mt-4 flex items-center gap-5">
+              <div class="flex items-center gap-1">
+                <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+                <p class="block font-sans text-xs font-normal text-gray-700 antialiased">
+                  JavaScript
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="card">
+            <div class="mb-2 flex items-center gap-3">
+              <a href="./ejercicios/Ejercicio02-10/index.html"
+                class="block font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500">
+                Exercise 10
+              </a>
+              <div class="status done">
+                <div class="mt-px">Finished</div>
+              </div>
+            </div>
+            <p class="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased">
+              Asks the user for his/her name, greet the user or say goodbye when he/she stands on a square or leaves it.
+            </p>
+            <div class="mt-4 flex items-center gap-5">
+              <div class="flex items-center gap-1">
+                <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+                <p class="block font-sans text-xs font-normal text-gray-700 antialiased">
+                  JavaScript
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 03 -->
+      <div name="Grupo" class="group">
+        <h1 class="group-title">CambioBases - Number</h1>
+        <div name="Cards" class="cards">
+          <!-- Card -->
+          <div class="card">
+            <div class="mb-2 flex items-center gap-3">
+              <a href="./ejercicios/Ejercicio03-01/index.html"
+                class="block font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500">
+                Exercise 01
+              </a>
+              <div class="status done">
+                <div class="mt-px">Finished</div>
+              </div>
+            </div>
+            <p class="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased">
+              Simple Calculator. </p>
+            <div class="mt-4 flex items-center gap-5">
+              <div class="flex items-center gap-1">
+                <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+                <p class="block font-sans text-xs font-normal text-gray-700 antialiased">
+                  JavaScript
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="card">
+            <div class="mb-2 flex items-center gap-3">
+              <a href="./ejercicios/Ejercicio03-02/index.html"
+                class="block font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500">
+                Exercise 02
+              </a>
+              <div class="status done">
+                <div class="mt-px">Finished</div>
+              </div>
+            </div>
+            <p class="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased">
+              Converter between numerical bases.</p>
+            <div class="mt-4 flex items-center gap-5">
+              <div class="flex items-center gap-1">
+                <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+                <p class="block font-sans text-xs font-normal text-gray-700 antialiased">
+                  JavaScript
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 04 -->
+      <div name="Grupo" class="group">
+        <h1 class="group-title">String</h1>
+        <div name="Cards" class="cards">
+          <!-- Card -->
+          <div class="card">
+            <div class="mb-2 flex items-center gap-3">
+              <a href="./ejercicios/Ejercicio04-01/index.html"
+                class="block font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500">
+                Exercise 01
+              </a>
+              <div class="status done">
+                <div class="mt-px">Finished</div>
+              </div>
+            </div>
+            <p class="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased">
+              String tools.</p>
+            <div class="mt-4 flex items-center gap-5">
+              <div class="flex items-center gap-1">
+                <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+                <p class="block font-sans text-xs font-normal text-gray-700 antialiased">
+                  JavaScript
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 05 -->
+      <div name="Grupo" class="group">
+        <h1 class="group-title">Proyectos</h1>
+        <div name="Cards" class="cards">
+          <!-- Card -->
+          <div class="card">
+            <div class="mb-2 flex items-center gap-3">
+              <a href="./ejercicios/Proyecto01/index.html"
+                class="block font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500">
+                Proyecto 01
+              </a>
+              <div class="status done">
+                <div class="mt-px">Finished</div>
+              </div>
+            </div>
+            <p class="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased">
+              Calculator </p>
+            <div class="mt-4 flex items-center gap-5">
+              <div class="flex items-center gap-1">
+                <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+                <p class="block font-sans text-xs font-normal text-gray-700 antialiased">
+                  JavaScript
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+</body>
+
+</html>

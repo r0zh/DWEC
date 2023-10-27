@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<style type="text/css" media="screen">
+	
+	@keyframes animacion{
+			from{
+				left: 0px;
+			}
+			
+			to{
+				left: 650px;
+			}
+		}
+		@keyframes animacion2{
+			from{
+				top:10px;
+			}
+			50%{
+				top:20px;
+			}
+			
+			to{
+				top:10px;
+			}
+		}
+
+		.coche{
+			position: relative;
+			animation-name: animacion, animacion2 ;
+			animation-duration: 5s, .5s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			animation-timing-function: linear;
+			
+			animation-fill-mode: forwards;
+			background-image: url(Coche1.jpg);
+			background-size: cover;
+			width: 200px;
+			height: 200px;
+		}
+	</style>
+	
+	
+</head>
+<body>
+
+	<div class="coche">
+		
+
+	</div>
+
+	
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Introduce el nombre del usuario</h1>
+    <input id="nombre" type="text" value="Jose Juan" />
+    <input id="grabar" type="button" value="Guardar" onclick="guardar()" />
+    <h1>Saluda al usuario por su nombre</h1>
+    <p onclick="saludar()">
+        Pulsa para saludar</p>
+    <br />
+
+    <h1>Saluda al usuario por su nombre y despidelo</h1>
+    <button onclick="saludar()">Dí Hola</button>
+    <button onclick="despedir()">Dí Adios</button>
+    <br />
+
+    <h1>Saluda al usuario por su nombre y despidelo según actue </h1>
+    <div style="background-color:black; width:100px;height:100px" onmouseover="saludar()" onmouseout="despedir()"></div>
+    <br />
+    <br />
+    <br />
+    <p id="salida"></p>
+</body>
+
+</html>
