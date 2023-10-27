@@ -1,0 +1,56 @@
+<!-- Efectos de transición en imágenes, programados con HTML5, CSS3 y JS -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./funciones.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Efectos de transición en imágenes</title>
+</head>
+
+<body>
+  <h1>Transici&oacute;n de im&aacute;genes</h1>
+  <div id="menu">
+    <h3>Tipos de transici&oacute;n</h3>
+    <ul>
+      <li onclick="modo='0';activar()">Sin transici&oacute;n.</li>
+      <li onclick="modo='1';activar()">de derecha a izquierda</li>
+      <li onclick="modo='2';activar()">de izquierda a derecha</li>
+      <li onclick="modo='3';activar()">de arriba a abajo</li>
+      <li onclick="modo='4';activar()">de abajo a arriba</li>
+      <li onclick="modo='5';activar()">Transparencia</li>
+      <li onclick="modo='6';activar()">peque&ntilde;o a grande</li>
+      <li onclick="modo='7';activar()">grande a peque&ntilde;o</li>
+    </ul>
+  </div>
+  <div id="visor">
+    <div id="saliente">
+      <table>
+        <td>
+        <th id="TablaimagenS"><img src="foto1.jpg" width="400" name="fotoSaliente" />
+        </th>
+        </td>
+      </table>
+      <div id="tituloSaliente">1. India - Agra - El Taj Majal.
+      </div>
+    </div>
+    <div id="entrante">
+      <table>
+        <td>
+        <th id="TablaimagenE"><img src="foto2.jpg" width="400" name="fotoEntrante" />
+        </th>
+        </td>
+      </table>
+      <div id="tituloEntrante">2. Albania - Region de Ballsh.
+      </div>
+    </div>
+  </div>
+  <div id="prueba">Sin Transici&oacute;n.
+  </div>
+</body>
+
+</html>
