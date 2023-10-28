@@ -1,5 +1,33 @@
 "use strict"
 
+let currentImg = 0;
+
+/**
+ * Get two images from the loaded images array. The first one is the current image and the second one is the next image.
+ * 
+ * @returns 
+ */
+function getImages() {
+    let img1 = loadedImgs[currentImg];
+    let img2;
+    if (reverse) {
+        if (currentImg == 0) {
+            currentImg = 10;
+        }
+        img2 = loadedImgs[currentImg - 1];
+        currentImg--;
+    } else {
+        if (currentImg == 9) {
+            currentImg = -1;
+        }
+        img2 = loadedImgs[currentImg + 1];
+        currentImg++;
+    }
+    img1.style.zIndex = 1;
+    img2.style.zIndex = 2;
+    return { img1, img2 };
+}
+
 function noTransition() {
     transitionInProgess = true;
     let { img1, img2 } = getImages();
@@ -8,9 +36,6 @@ function noTransition() {
     transitionInProgess = false;
 }
 
-/**
- * Transition from right to left
- */
 function rightToLeft() {
     transitionInProgess = true;
     let { img1, img2 } = getImages();
@@ -26,7 +51,6 @@ function rightToLeft() {
             resetImage(img1);
             transitionInProgess = false;
         } else {
-            // style.left)
             img1.style.left = parseInt(img1.style.left) - 1 + "px";
             img2.style.left = parseInt(img2.style.left) - 1 + "px";
         }
@@ -55,7 +79,6 @@ function leftToRight() {
 }
 
 function topToBottom() {
-    console.log("entro")
     transitionInProgess = true;
     let { img1, img2 } = getImages();
     img2.style.display = "block";
@@ -70,7 +93,6 @@ function topToBottom() {
             resetImage(img1);
             transitionInProgess = false;
         } else {
-            console.log("me ejecuto")
             img1.style.bottom = parseInt(img1.style.bottom) - 1 + "px";
             img2.style.bottom = parseInt(img2.style.bottom) - 1 + "px";
         }

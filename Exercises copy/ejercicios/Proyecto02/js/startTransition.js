@@ -1,8 +1,12 @@
 "use strict"
 
+let transitionInProgess = false;
+
+/**
+ * Starts the transition
+ */
 function startTransition() {
     if (!transitionInProgess) {
-        console.log(mode)
         switch (mode) {
             case "noTransition":
                 noTransition();

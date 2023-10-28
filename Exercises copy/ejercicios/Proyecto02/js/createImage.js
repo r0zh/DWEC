@@ -1,5 +1,11 @@
 "use strict"
-
+/**
+ * Creates an image element with the given url and imgNum
+ * 
+ * @param url 
+ * @param imgNum 
+ * @returns 
+ */
 function createImage(url, imgNum) {
     let img = new Image();
     img.src = url;

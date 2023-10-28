@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="./js/transitions.js" type="text/javascript"></script>
-    <script defer src="./js/startTransition.js" type="text/javascript"></script>
     <style type="text/tailwindcss">
         @layer components {
           .radioButton {
@@ -17,18 +15,25 @@
           }
         }
     </style>
+    <script defer src="./js/transitions.js" type="text/javascript"></script>
+    <script defer src="./js/startTransition.js" type="text/javascript"></script>
     <script defer src="./js/solicitud.js" type="text/javascript"></script>
     <script defer src="./js/loadingImg.js" type="text/javascript"></script>
     <script defer src="./js/createImage.js" type="text/javascript"></script>
     <script defer src="./js/loadImages.js" type="text/javascript"></script>
+    <script defer src="./js/autoTransition.js" type="text/javascript"></script>
+    <script defer src="./js/slideshowControls.js" type="text/javascript"></script>
     <script defer src="./js/script.js" type="text/javascript"></script>
     <title>Carrousel</title>
 
 </head>
 
 <body>
-    <div class="mb-20">
-        <h1 class="p-6 shadow-xl rounded-b-3xl text-center font-mono text-3xl font-bold">Carrousel</h1>
+    <div class="grid place-content-center mb-20 shadow-lg py-5">
+        <div class="justify-between items-center w-full lg:flex lg:w-auto lg:order-1 text-3xl">
+            FUNDAMENTOS DE <img class="h-12 self-center mx-2" src="../../img/JavaScript-logo.png"></img> (ES6)
+            - Carrousel
+        </div>
     </div>
     <div class="grid grid-cols-1 m-auto sm:grid-cols-10">
         <div class="col-span-2 hidden sm:block"></div>
@@ -72,7 +77,7 @@
         </div>
         <div class="grid w-full place-self-center place-content-center col-span-6 overflow-clip">
             <div class="grid self-center place-content-center">
-                <button class="px-2 py-1 mb-3 rounded-2xl border border-black" id="loadNew">Get new
+                <button class="px-2 py-1 mb-3 rounded-2xl border border-black" id="loadNewImages">Get new
                     images</button>
             </div>
             <div id="contenido"
@@ -98,6 +103,14 @@
 
             </div>
         </div>
+
+    </div>
+    </div>
+    <div
+        class=" w-52 p-2.5 mt-10 rounded-xl m-auto border border-black bg-slate-200 hover:shadow-lg transition-shadow font-semibold">
+        <a href="../../index.html">&gt;&gt;
+            Página
+            principal</a>
     </div>
 
 

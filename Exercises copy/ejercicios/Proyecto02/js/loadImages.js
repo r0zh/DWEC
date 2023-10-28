@@ -1,5 +1,9 @@
 "use strict"
-
+/**
+ * Fetches an image from the server and once it's loaded, creates an image element. Then it appends the image to the DOM.
+ * 
+ * @param imgNum 
+ */
 async function loadImages(imgNum) {
     let url = `https://picsum.photos/900`;
     let img_url = await solicitud(url);
