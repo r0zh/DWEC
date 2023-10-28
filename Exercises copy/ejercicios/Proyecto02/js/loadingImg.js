@@ -1,3 +1,5 @@
+"use strict"
+
 function displayLoading() {
     loading.style.display = "block";
 }
