@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script  src="./aleatorio.js" type="module"></script>
+    <script  src="./Lista.js" type="module"></script>
+    <script  src="./Cola.js" type="module"></script>
+    <script  src="./reparar.js" type="module"></script>
+    <script  src="./paraReparar.js" type="module"></script>
+    <script  src="./Pila.js" type="module"></script>
+    <script  src="./lavar.js" type="module"></script>
+    <script  src="./mostrar.js" type="module"></script>
+    <script  src="./paraLavar.js" type="module"></script>
+    <script defer src="./script.js" type="module"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>TAREAS 10/05 - SOLUCIÓN</title>
+</head>
+
+<body>
+    <div class="content">
+        <h2>TAREAS</h2>
+        <div class="grid-container">
+
+            <!-- ************************************************************** -->
+
+            <!-- TITULO -->
+            <div class="grid-item">
+                <div class="title">Ejercicios de Pilas, Colas y Listas (POO)</div>
+            </div> <!-- FIN grid-item-->
+            <!-- RESULTADO TITULO -->
+            <div class="grid-item">
+                <div class="title">Soluciones a los ejercicios de Pilas, Colas y Listas (POO)</div>
+            </div>
+
+            <!-- ************************************************************** -->
+
+            <!-- EJERCICIO Pila - LIFO -->
+            <div class="grid-item">
+                <p><strong>Pila (Stack) - LIFO</strong></p>
+                <input type='button' id="introducir" value="Para Lavar" />
+                <input type='button' id="obtener" value="Lavar" />
+            </div> <!-- FIN grid-item-->
+            <!-- RESULTADO EJERCICIO Pila - LIFO -->
+            <div class="grid-item">
+                <p><strong>Resultado para Pila - LIFO</strong></p>
+                <label>
+                    <pre>Resultado: </pre>
+                </label>
+                <p id="resPila"></p>
+            </div>
+
+            <!-- ************************************************************** -->
+
+            <!-- EJERCICIO Cola - FIFO -->
+            <div class="grid-item">
+                <p><strong>Cola (Queue) - LIFO</strong></p>
+                <input type='button' id="llegada" value="Para Reparar" />
+                <input type='button' id="atender" value="Reparar" />
+            </div> <!-- FIN grid-item-->
+            <!-- RESULTADO EJERCICIO Cola - FIFO -->
+            <div class="grid-item">
+                <p><strong>Resultado para Cola - FIFO</strong></p>
+                <label>
+                    <pre>Resultado: </pre>
+                </label>
+                <p id="resCola"></p>
+            </div>
+
+            <!-- ************************************************************** -->
+
+            <!-- EJERCICIO Lista -->
+            <div class="grid-item">
+                <p><strong>Listas</strong></p>
+                <input type='button' id="anadir" value="Añadir" />
+                <input type='button' id="eliminar" value="Eliminar" />
+            </div> <!-- FIN grid-item-->
+            <!-- RESULTADO EJERCICIO Lista -->
+            <div class="grid-item">
+                <p><strong>Resultado para Lista - Ordenada</strong></p>
+                <label>
+                    <pre>Resultado: </pre>
+                </label>
+                <p id="resLista"></p>
+            </div>
+
+            <!-- ************************************************************** -->
+
+            <!-- EJERCICIO Lista - Prioridad -->
+            <div class="grid-item">
+                <p><strong>Listas prioridad</strong></p>
+                <input type='button' id="anadirPrior" value="Añadir" />
+                <input type='button' id="eliminarPrior" value="Eliminar" />
+            </div> <!-- FIN grid-item-->
+            <!-- RESULTADO EJERCICIO Lista - Prioridad -->
+            <div class="grid-item">
+                <p><strong>Resultado para Lista - Prioridad</strong></p>
+                <label>
+                    <pre>Resultado: </pre>
+                </label>
+                <p id="resListaPrior"></p>
+            </div>
+
+            <!-- ************************************************************** -->
+
+        </div> <!-- FIN grid-container-->
+    </div> <!-- FIN contenedor-->
+</body>
+
+</html>

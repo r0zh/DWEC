@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script defer src="./js/mostrarDatos.js" type="text/javascript"></script>
+	<script defer src="./js/borrarDato.js" type="text/javascript"></script>
+	<script defer src="./js/grabarDato.js" type="text/javascript"></script>
+	<script defer src="./js/script.js" type="text/javascript"></script>
+	<!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+	<link href="./img/favicon.ico" rel="icon" type="image/x-icon">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<style type="text/tailwindcss">
+		#contenedor {
+  			@apply text-left w-[825px] h-auto pl-[0.5em];
+		}
+		fieldset{
+			@apply border border-solid border-gray-300 p-3
+		}
+		table {
+  			@apply w-full ;
+		}
+		th,
+		td {
+  			@apply w-3/12 text-left align-top;
+		}
+	  </style>
+	<title>Cookies</title>
+</head>
+
+<body class="m-4">
+	<div id="contenedor">
+		<h2 class="text-2xl my-2">Práctica. CRUD. JSES6. 'cookies'</h2>
+
+		<!-- 		<form id="form1" action="#" method="post"> -->
+		<fieldset class="">
+			<legend>Guardar nombre y valor</legend>
+			<table id="tabla" class="filas">
+				<thead>
+					<tr>
+						<th><label name="labelNombre" for="nombre">Introduce un nombre</label></th>
+						<th><label name="labelValor" for="valor">Introduce un valor</label></th>
+					</tr>
+					<tr>
+						<th>
+							<input type="text" id="clave" class="control" name="clave" size="20"
+								placeholder="Escribe un clave..." required />
+						</th>
+						<th>
+							<input type="text" id="valor" class="control" name="valor" size="20"
+								placeholder="Escribe un valor..." required />
+						</th>
+						<th>
+							<input type="button" id="guardar" value="Guardar"></input>
+							<img src="./img/save.svg" alt="Guardar" width="22" height="22"
+								style="vertical-align: middle" />
+							<input type="button" id="borrar" value="Borrar"></input>
+							<img src="./img/delete.svg" alt="Borrar" width="22" height="22"
+								style="vertical-align: middle" />
+						</th>
+					</tr>
+				</thead>
+				<tbody id="cuerpo">
+				</tbody>
+			</table>
+		</fieldset>
+		<!-- 		</form> -->
+	</div>
+</body>
+
+</html>
