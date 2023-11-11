@@ -1,60 +1,34 @@
-"use strict"
+const buttons = document.getElementsByClassName("options");
+const machineChoiceDiv = document.getElementById("machine-choice");
+const result = document.getElementById("result");
+let machineChoice;
+let timeoutId;
 
-// Button to load new images
-const loadNewImages = document.getElementById("loadNewImages");
-// DOM element where the images will be displayed
-const contenido = document.getElementById("contenido");
-// Loading gif
-const loading = document.getElementById("loading");
-// Transition options
-const options = document.getElementById("options");
-// Array to store loaded images to delete them in a future
-let loadedImgs = [];
+const choices = ["🪨", "🧻", "✂️", "🦎", "🖖"];
 
 
+Array.from(buttons).forEach((button) => {
+    button.addEventListener("click", function () {
+        result.innerHTML = "";
+        let playerChoice = this.id;
+        if (playerChoice === "rock") {
+            playerChoice = "🪨";
+        } else if (playerChoice === "paper") {
+            playerChoice = "🧻";
+        } else if (playerChoice === "scissors") {
+            playerChoice = "✂️";
+        } else if (playerChoice === "lizard") {
+            playerChoice = "🦎";
+        } else if (playerChoice === "spock") {
+            playerChoice = "🖖";
+        }
+        startAnimation();
 
-// Variable to store if the order of the images is reversed
-let reverse = false;
-
-// Variable to store the transition mode
-let mode = document.querySelector('input[name="mode"]:checked').id;
-
-// Display images when the page loads
-displayImages();
-
-/**
- * Change transition mode when the radio buttons are clicked
- */
-options.addEventListener("change", () => {
-    mode = document.querySelector('input[name="mode"]:checked').id;
-});
-
-/**
- * Displays new images when the button is clicked
- */
-loadNewImages.addEventListener("click", () => {
-    removeImages(loadedImgs)
-    displayImages();
-});
-
-/**
- * Displays the images in the DOM
- */
-function displayImages() {
-    displayLoading();
-    for (let i = 0; i < 10; i++) {
-        loadImages(i);
-    }
-}
-
-/**
- * Remove all images from the DOM
- */
-function removeImages(loadedImgs) {
-    loadedImgs.forEach(element => {
-        element.parentNode.removeChild(element);
+        setTimeout(function () {
+            clearTimeout(timeoutId);
+            let matchResult = compare(playerChoice, machineChoice);
+            result.innerHTML = matchResult;
+            delay = 10; // Reset the delay
+        }, 6000);
     });
-    loadedImgs.length = 0;
-}
-
-
+});

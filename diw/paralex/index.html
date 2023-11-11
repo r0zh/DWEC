@@ -1,0 +1,49 @@
+<!-- FILEPATH: /workspaces/DWEC/diw/paralex/index.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parallax Effect</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 2000px;
+      }
+
+      .parallax {
+        background-image: url('https://picsum.photos/1200/800');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+      }
+
+      .parallax-content {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: white;
+        font-size: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parallax">
+      <div class="parallax-content">
+        <h1>Parallax Effect</h1>
+        <p>This is a simple parallax effect created using HTML, CSS, and JavaScript.</p>
+      </div>
+    </div>
+    <div style="height: 1500px;"></div>
+    <script>
+      window.addEventListener('scroll', function() {
+        const parallax = document.querySelector('.parallax');
+        let scrollPosition = window.pageYOffset;
+        parallax.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)';
+      });
+    </script>
+  </body>
+</html>
