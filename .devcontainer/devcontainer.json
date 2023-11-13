@@ -1,0 +1,17 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
+{
+	"name": "My Project",
+	"dockerFile": "Dockerfile",
+	"forwardPorts": [
+		4200
+	],
+	"extensions": [
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+		"ms-azuretools.vscode-docker",
+		"ms-vscode.vscode-typescript-tslint-plugin",
+		"msjsdiag.debugger-for-chrome",
+		"visualstudioexptteam.vscodeintellicode"
+	],
+}
