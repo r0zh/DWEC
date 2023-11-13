@@ -6,12 +6,22 @@
 	"forwardPorts": [
 		4200
 	],
-	"extensions": [
-		"dbaeumer.vscode-eslint",
-		"esbenp.prettier-vscode",
-		"ms-azuretools.vscode-docker",
-		"ms-vscode.vscode-typescript-tslint-plugin",
-		"msjsdiag.debugger-for-chrome",
-		"visualstudioexptteam.vscodeintellicode"
-	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"Angular.ng-template",
+				"johnpapa.Angular2",
+				"cyrilletuzi.angular-schematics",
+				"formulahendry.auto-close-tag",
+				"steoates.autoimport",
+				"formulahendry.auto-rename-tag",
+				"usernamehw.errorlens",
+				"quicktype.quicktype",
+				"pmneo.tsimporter",
+				"EditorConfig.EditorConfig",
+				"aaron-bond.better-comments",
+				"formulahendry.terminal"
+			]
+		}
+	}
 }
